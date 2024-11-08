@@ -102,3 +102,51 @@ button:hover {
     padding: 0 15px;
   }
 }
+
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #0073e6;
+  background-color: transparent;
+  border: 2px solid #0073e6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:
+    box-shadow 0.3s ease,
+    color 0.3s ease,
+    background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  color: #ffffff;
+  background-color: #0073e6;
+  box-shadow: 0px 4px 10px rgba(0, 115, 230, 0.4);
+}
+
+body.dark-theme {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.dark-theme section {
+  background-color: #333;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3 {
+  color: #4bbfff;
+}
+
+.dark-theme li {
+  background-color: #444;
+  border-left: 4px solid #4bbfff;
+}
+
+.dark-theme li:hover {
+  background-color: #555;
+}

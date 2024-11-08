@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
     <link rel="stylesheet" href="style.css" />
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("dark-theme");
+      }
+    </script>
   </head>
   <body>
+    <button id="theme-toggle" onclick="toggleTheme()">Сменить тему</button>
     <div class="container">
       <section id="about">
         <h1>О нас</h1>
