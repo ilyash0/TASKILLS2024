@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Arial", sans-serif;
   color: #333;
@@ -11,10 +15,32 @@ body {
   background-color: #f4f4f9;
 }
 
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.header {
+  background: #0073e6;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header__title {
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  flex-grow: 1;
 }
 
 section {
@@ -33,7 +59,7 @@ section:hover {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-h1 {
+h2 {
   color: #0073e6;
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -41,7 +67,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+h3 {
   color: #005bb5;
   font-size: 2em;
   margin-bottom: 15px;
@@ -49,7 +75,7 @@ h2 {
   padding-bottom: 5px;
 }
 
-h3 {
+h4 {
   color: #003d99;
   font-size: 1.5em;
   margin-top: 15px;
@@ -93,6 +119,18 @@ button:hover {
   background-color: #005bb5;
 }
 
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__text{
+  margin: 0;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 10px;
@@ -104,9 +142,12 @@ button:hover {
 }
 
 #theme-toggle {
-  position: fixed;
+  position: sticky;
   top: 10px;
+  margin-top: 10px;
+  margin-left: auto;
   right: 10px;
+  width: 150px;
   padding: 10px 20px;
   font-size: 1em;
   color: #0073e6;
@@ -136,9 +177,9 @@ body.dark-theme {
   box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
 }
 
-.dark-theme h1,
 .dark-theme h2,
-.dark-theme h3 {
+.dark-theme h3,
+.dark-theme h4 {
   color: #4bbfff;
 }
 
@@ -151,7 +192,7 @@ body.dark-theme {
   background-color: #555;
 }
 
-#contact h2 {
+#contact h3 {
   color: #005bb5;
   font-size: 2em;
   margin-bottom: 15px;
@@ -166,7 +207,7 @@ body.dark-theme {
   border-radius: 8px;
 }
 
-.contact-group h3 {
+.contact-group h4 {
   color: #0073e6;
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -209,6 +250,10 @@ body.dark-theme {
   font-weight: bold;
 }
 
+.dark-theme .header{
+  background: #4bbfff;
+}
+
 .dark-theme #contact {
   color: #e0e0e0;
 }
@@ -218,12 +263,12 @@ body.dark-theme {
   border: 1px solid #444;
 }
 
-.dark-theme #contact h2 {
+.dark-theme #contact h3 {
   color: #4bbfff;
   border-bottom: 2px solid #4bbfff;
 }
 
-.dark-theme .contact-group h3 {
+.dark-theme .contact-group h4 {
   color: #4bbfff;
   border-bottom: 1px solid #555;
 }
