@@ -14,16 +14,21 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <h1 class="header__title">Портфолио команды .....</h1>
+        <h1 class="header__title">Портфолио команды</h1>
+        <nav>
+          <a href="#about">О нас</a>
+          <a href="#projects">Наши проекты</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+        <button id="theme-toggle" onclick="toggleTheme()">Сменить тему</button>
       </header>
-      <button class="button__theme" id="theme-toggle" onclick="toggleTheme()">Сменить тему</button>
       <div class="container">
         <section class="section" id="about">
           <h2 class="title">О нас</h2>
           <p class="text">
             Мы – команда профессионалов, увлеченных веб-разработкой. Наш опыт и
-            креативность позволяют решать самые сложные задачи и создавать сайты,
-            которые приносят результат.
+            креативность позволяют решать самые сложные задачи и создавать
+            сайты, которые приносят результат.
           </p>
         </section>
         <section class="section" id="projects">
@@ -54,7 +59,7 @@
         </section>
   
         <section class="section" id="contact">
-          <h3 class="subtitle">Контакты</h3>
+          <h2 class="title">Контакты</h2>
   
           <div class="contact-group">
             <h4 class="contact-group__title">Общие</h4>
@@ -62,7 +67,7 @@
             <p class="text contact-group__text">Телефон: <a class="contact-group__link" href="tel:+71234567890">+7 (123) 456-78-90</a></p>
             <p class="text contact-group__text">Адрес: г. Москва, ул. Примерная, д. 1</p>
           </div>
-  
+
           <div class="contact-group">
             <h4 class="contact-group__title">Личные контакты команды</h4>
             <ul class="list contact-group__list">
