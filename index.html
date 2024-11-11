@@ -22,72 +22,66 @@
         </nav>
         <button id="theme-toggle" onclick="toggleTheme()">Сменить тему</button>
       </header>
-
       <div class="container">
-        <section id="about">
-          <h2>О нас</h2>
-          <p>
+        <section class="section" id="about">
+          <h2 class="title">О нас</h2>
+          <p class="text">
             Мы – команда профессионалов, увлеченных веб-разработкой. Наш опыт и
             креативность позволяют решать самые сложные задачи и создавать
             сайты, которые приносят результат.
           </p>
         </section>
-
-        <section id="projects">
-          <h2>Наши проекты</h2>
-          <ul>
-            <li>
-              <h3>Проект 1: Онлайн-магазин</h3>
-              <p>
+        <section class="section" id="projects">
+          <h2 class="title">Наши проекты</h2>
+          <ul class="list">
+            <li class="list__item">
+              <h3 class="subtitle">Проект 1: Онлайн-магазин</h3>
+              <p class="text">
                 Мы разработали адаптивный онлайн-магазин, который обеспечивает
                 удобный пользовательский опыт и простую навигацию.
               </p>
             </li>
-            <li>
-              <h3>Проект 2: Корпоративный сайт</h3>
-              <p>
+            <li class="list__item">
+              <h3 class="subtitle">Проект 2: Корпоративный сайт</h3>
+              <p class="text">
                 Для крупной компании мы создали сайт, который отображает
                 информацию о компании и её продуктах.
               </p>
             </li>
-            <li>
-              <h3>Проект 3: Портал для мероприятий</h3>
-              <p>
+            <li class="list__item">
+              <h3 class="subtitle">Проект 3: Портал для мероприятий</h3>
+              <p class="text">
                 Создали интерактивный портал, где пользователи могут
                 зарегистрироваться и участвовать в мероприятиях онлайн.
               </p>
             </li>
           </ul>
         </section>
-
-        <section id="contact">
-          <h2>Контакты</h2>
-
+  
+        <section class="section" id="contact">
+          <h2 class="title">Контакты</h2>
+  
           <div class="contact-group">
-            <h4>Общие</h4>
-            <p>Email: <a href="mailto:team@example.com">team@example.com</a></p>
-            <p>Телефон: <a href="tel:+71234567890">+7 (123) 456-78-90</a></p>
-            <p>Адрес: г. Москва, ул. Примерная, д. 1</p>
+            <h4 class="contact-group__title">Общие</h4>
+            <p class="text contact-group__text">Email: <a class="contact-group__link" href="mailto:team@example.com">team@example.com</a></p>
+            <p class="text contact-group__text">Телефон: <a class="contact-group__link" href="tel:+71234567890">+7 (123) 456-78-90</a></p>
+            <p class="text contact-group__text">Адрес: г. Москва, ул. Примерная, д. 1</p>
           </div>
 
           <div class="contact-group">
-            <h4>Личные контакты команды</h4>
-            <ul>
-              <li>
+            <h4 class="contact-group__title">Личные контакты команды</h4>
+            <ul class="list contact-group__list">
+              <li class="list__item contact-group__item">
                 Шмырёв Илья Алексеевич –
-                <a href="mailto:exampl@example.com"> example@example.com </a> |
-                <a href="tel:+71231234567"> +7 (123) 123-45-67 </a> |
-                <a href="https://github.com/ilyash0" target="_blank">
-                  GitHub
-                </a>
+                <a class="contact-group__link" href="mailto:exampl@example.com">example@example.com</a>
+                | <a class="contact-group__link" href="tel:+71231234567">+7 (123) 123-45-67</a> |
+                <a class="contact-group__link" href="https://github.com/ilyash0" target="_blank">GitHub</a>
               </li>
-              <li>
+              <li class="list__item contact-group__item">
                 Никита Ваганов Максимович –
-                <a href="mailto:exampl@example.com"> example@example.com </a> |
-                <a href="tel:+71231234567"> +7 (123) 123-45-67 </a> |
-                <a href="https://github.com/Electr0nic1" target="_blank">
-                  GitHub
-                </a>
+                <a class="contact-group__link" href="mailto:exampl@example.com">example@example.com</a>
+                | <a class="contact-group__link" href="tel:+71231234567">+7 (123) 123-45-67</a> |
+                <a class="contact-group__link" href="https://github.com/Electr0nic1" target="_blank">GitHub</a>
               </li>
             </ul>
           </div>
