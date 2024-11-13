@@ -6,7 +6,7 @@
   --accent-bg-color: #fff;
 }
 
-.header{
+.header {
   --header-bg: var(--accent-color);
   --header-color: var(--accent-bg-color);
 }
@@ -33,7 +33,9 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   background-color: var(--bg-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .wrapper {
