@@ -331,3 +331,26 @@ body.dark-theme {
 .dark-theme .contact-group__item::before {
   color: #4bbfff;
 }
+
+.project-details {
+  background-color: #f9f9ff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+.project-summary {
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+.project-summary:hover {
+  color: #005bb5;
+}
+
+.fill-available {
+  width: -webkit-fill-available;
+}
