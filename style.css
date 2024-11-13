@@ -352,5 +352,5 @@ body.dark-theme {
 }
 
 .fill-available {
-  width: -webkit-fill-available;
+  width: 100%;
 }
