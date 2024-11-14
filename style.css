@@ -78,6 +78,7 @@ body {
   gap: 1rem;
   justify-content: center;
   display: flex;
+  gap: 40px;
 }
 
 .menu-list__item {
@@ -388,6 +389,16 @@ body.dark-theme {
   font-weight: bold;
 }
 
+.contact-group__img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.contact-group__img:hover {
+  transform: scale(1.01);
+}
+
 .dark-theme .header {
   background: #4bbfff;
 }
@@ -440,6 +451,10 @@ body.dark-theme {
   background-color: #2c2c2c;
 }
 
+.dark-theme .contact-group__img {
+  filter: brightness(0.8);
+}
+
 .project-summary {
   font-size: 1.2em;
   font-weight: bold;
@@ -457,7 +472,7 @@ body.dark-theme {
 
 .scroll-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   left: 20px;
   width: 45px;
   height: 45px;
