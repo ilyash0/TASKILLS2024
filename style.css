@@ -6,7 +6,7 @@
   --accent-bg-color: #fff;
 }
 
-.header{
+.header {
   --header-bg: var(--accent-color);
   --header-color: var(--accent-bg-color);
 }
@@ -33,7 +33,9 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   background-color: var(--bg-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .wrapper {
@@ -74,7 +76,6 @@ body {
 }
 
 .menu-list__item {
-  /*padding: 0 0.3rem;*/
   font-size: 1.5em;
   text-decoration: none;
   color: white;
@@ -261,7 +262,7 @@ section {
 }
 
 .label-theme:active:after {
-  width: 53px;
+  width: 40px;
 }
 
 .label-theme__svg {
@@ -418,4 +419,31 @@ body.dark-theme {
 
 .dark-theme .contact-group__item::before {
   color: #4bbfff;
+}
+
+.project-details {
+  background-color: #f9f9ff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+.dark-theme .project-details {
+  background-color: #2c2c2c;
+}
+
+.project-summary {
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--accent-color);
+}
+
+.project-summary:hover {
+  color: #005bb5;
+}
+
+.fill-available {
+  width: 100%;
 }
