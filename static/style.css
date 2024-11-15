@@ -397,3 +397,8 @@ section {
   width: 35px;
   padding-top: 5px;
 }
+
+.photo-in-paragraph {
+  float: right;
+  width: 15%;
+}
