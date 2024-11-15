@@ -392,3 +392,8 @@ section {
   background-color: var(--secondary-color);
   opacity: 1;
 }
+
+.scroll-icon {
+  width: 35px;
+  padding-top: 5px;
+}
