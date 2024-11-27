@@ -17,6 +17,11 @@
           <a class="menu-list__item" href="#projects">Наши проекты</a>
           <a class="menu-list__item" href="#contact">Контакты</a>
         </nav>
+        <button class="header__menu-btn" title="навигация">
+          <span class="header__menu-btn--long"></span>
+          <span class="header__menu-btn--short"></span>
+          <span class="header__menu-btn--long"></span>
+        </button>
         <div class="theme-toggle">
           <input
             class="input-theme"
@@ -169,7 +174,7 @@
               <li class="list__item contact-group__item">
                 Шмырёв Илья Алексеевич —
                 <a class="contact-group__link" href="mailto:shmyryv@yandex.ru">
-                  shmyryv@yandex.ru
+                  shmyryv@yandex.ru<br class="break">
                 </a>
                 |
                 <a class="contact-group__link" href="tel:+79923353581">
@@ -190,7 +195,7 @@
                   class="contact-group__link"
                   href="mailto:nikitaftp99@gmail.com"
                 >
-                  nikitaftp99@gmail.com
+                  nikitaftp99@gmail.com<br class="break">
                 </a>
                 |
                 <a class="contact-group__link" href="tel:+79022547311">
@@ -255,6 +260,14 @@
         } else {
           document.body.classList.remove("dark-theme");
         }
+      });
+
+
+      const menuBtn = document.querySelector('.header__menu-btn');
+      const menuMobile = document.querySelector('.menu-list');
+
+      menuBtn.addEventListener('click', () => {
+        menuMobile.classList.toggle('menu--open');
       });
     </script>
   </body>

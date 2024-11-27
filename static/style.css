@@ -63,6 +63,34 @@ body {
   text-align: center;
 }
 
+.header__menu-btn {
+  display: none;
+  width: 53px;
+  height: 44px;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 6px;
+  background-color: #ff9b3f;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header__menu-btn span {
+  height: 2px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.header__menu-btn--long {
+  width: 33px;
+}
+
+.header__menu-btn--short {
+  width: 21px;
+}
+
 .container {
   max-width: 900px;
   margin-top: 70px;
@@ -345,6 +373,10 @@ section {
 
 .contact-group__img:hover {
   transform: scale(1.01);
+}
+
+.break {
+  display: none;
 }
 
 .project-details {
